@@ -8,9 +8,9 @@ Players take turns to count incrementally, replacing any number divisible by thr
 
 An example implementation has been written using **ES6/TypeScript** (fizzbuzz.ts).
 
-I also attached a compiled version in **ES5/JavaScript** (fizzbuzz.js).
+There is also a version in **ES5/JavaScript** (fizzbuzz.js).
 
-### Solutions
+## Solutions
 
 Everything starts with the `initialize()` function, which takes a range and a configs array;
 
