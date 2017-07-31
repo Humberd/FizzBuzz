@@ -16,6 +16,10 @@ function initialize(from, to, configuration) {
 
 const getConditionalOutputs = (configuration, index) => configuration.reduce(comparer(index), "");
 
-const comparer = (index) => (output, item) => index % item.number ? output : output + item.word;
+/*
+  A higher order function that is used to reduce array of configs to a single string.
+  When the current index modulo config number equals 0 then it adds config word to the previous output.
+ */
+const comparer = (index) => (output, configItem) => index % configItem.number ? output : output + configItem.word;
 
 initialize(1, 100, config);

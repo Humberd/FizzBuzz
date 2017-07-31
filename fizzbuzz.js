@@ -12,5 +12,9 @@ function initialize(from, to, configuration) {
     }
 }
 var getConditionalOutputs = function (configuration, index) { return configuration.reduce(comparer(index), ""); };
-var comparer = function (index) { return function (output, item) { return index % item.number ? output : output + item.word; }; };
+/*
+  A higher order function that is used to reduce array of configs to a single string.
+  When the current index modulo config number equals 0 then it adds config word to the previous output.
+ */
+var comparer = function (index) { return function (output, configItem) { return index % configItem.number ? output : output + configItem.word; }; };
 initialize(1, 100, config);
