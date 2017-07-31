@@ -15,5 +15,5 @@ There is also a version in **ES5/JavaScript** (fizzbuzz.js).
 Everything starts with the `initialize()` function, which takes a range and a configs array;
 
 A config object has 2 fields:
- * Number - if index modulo this number equals 0, then the comparer method returns a 'word'
+ * Number - if index modulo this number equals 0, then the comparer method attaches a 'word' to the result
  * Word - wor that is added if the condition above is fulfilled.
